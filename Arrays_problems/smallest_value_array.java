@@ -13,7 +13,7 @@ class Main {
             if( arr[i] < min) //2<1,3<1,4<1,0<1 0<1
               {
                   
-                  arr[i]=min;
+                  min=arr[i];
                   
               }
             
