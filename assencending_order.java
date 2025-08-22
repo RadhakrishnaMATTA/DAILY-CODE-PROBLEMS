@@ -4,43 +4,6 @@ public static void main(String args[])
 
 {
 
-
- 
-String s = new String("hi");
-
-char arr[] = s.toCharArray();
-
-String copy ="";
-
-for(int i=arr.length; i>=0; i--)
- {
-
-         
-        
-        copy = copy+arr[i];  
-
-
-
-}
-
-
-if(copy.equals(s))
- {
-
-
-  System.out.println("String palindrom");
-
-
-}
-
-
-
-
-
-}
-
-
-/*
 String s = new String("RadhaA");
 
 char arr[] = s.toCharArray();
@@ -75,4 +38,3 @@ for(char temp : arr)
    System.out.println(temp);
 
 }
-*/
