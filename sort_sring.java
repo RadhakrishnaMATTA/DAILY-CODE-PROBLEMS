@@ -4,75 +4,19 @@ public static void main(String args[])
 
 {
 
+String s = "madam";
 
- 
-String s = new String("hi");
-
-char arr[] = s.toCharArray();
-
-String copy ="";
-
-for(int i=arr.length; i>=0; i--)
- {
-
-         
-        
-        copy = copy+arr[i];  
+StringBuffer sb = new  StringBuffer(s);
 
 
+String rev = sb.reverse().toString();
+
+if(s .equals(rev))
+{
+
+ System.out.println(s);
 
 }
 
-
-if(copy.equals(s))
- {
-
-
-  System.out.println("String palindrom");
-
-
 }
-
-
-
-
-
 }
-
-
-/*
-String s = new String("RadhaA");
-
-char arr[] = s.toCharArray();
- //bubble sort alg
-
-
-for(int x=0; x<arr.length-1;x++)
- {
-
-    for(int y=0 ;y<arr.length-1;y++)
-     {
-
-          if(arr[y] < arr[y+1])
-            {
-              //do swap
-
-              char temp = arr[y];
-             arr[y] = arr[y+1];
-             arr[y+1] = temp;
- 
-               
-            }
-          
- 
-     }
-
-
- }
-
-for(char temp : arr)
- {
-   System.out.println(temp);
-
-}
-*/
