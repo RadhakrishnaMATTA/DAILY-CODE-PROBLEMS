@@ -1,0 +1,43 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		
+		String a ="hi this is radha";
+		
+		String s[] = a.split(" ");
+		
+		for(int i=0;i<s.length;i++){
+		    
+		    char arr[] = s[i].toCharArray();
+        		    //['h','i']
+		          //    0   1    
+		     
+		   arr[0]=Character.toUpperCase(arr[0]);
+		   //[H]
+		   arr[arr.length-1]=Character.toUpperCase(arr[arr.length-1]);
+		   //laste 
+		   
+		   s[i]=new String(arr);
+		   
+		   
+		   // after update print the string;
+		    for(char temp: arr){
+		        System.out.print(temp);
+		    }
+		    
+		    
+		}
+		
+		
+		
+	}
+}
