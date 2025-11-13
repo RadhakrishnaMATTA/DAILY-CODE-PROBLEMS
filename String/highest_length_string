@@ -1,0 +1,31 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        
+     String arr[] = {"hi","radha","how are you"};
+     
+     
+     int temp=0;
+     for(int i=0;i<arr.length;i++){
+         String dup = arr[i];
+         
+         
+         int size =dup.length();
+         
+         if(temp < size){
+             
+             temp = i;
+             
+             
+         }
+         
+     }
+     
+     System.out.println("highest :  "+arr[temp]);
+      
+       
+    }
+}
