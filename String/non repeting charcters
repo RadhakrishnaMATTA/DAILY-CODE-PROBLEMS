@@ -1,0 +1,54 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        //System.out.println("Try programiz.pro");
+        
+        
+        String s = "Radha krishna";
+        
+        
+        
+        //if non repeting charcter in a string
+        
+        
+        
+        // breute force 
+        
+        //remove the space
+        
+        s  = s.replace(" ","");
+        
+        String s1 =" ";
+        //two pointer
+        for(int i=0;i<s.length();i++){
+            
+            int count=0;
+            
+              for(int j=i+1;j<s.length();j++){
+                  
+                  
+                  if(i != j &&s.charAt(i)==s.charAt(j)){
+                      
+                      count++;
+                      
+                  }
+              }
+              
+              
+              if(count==0){
+                  
+                  s1 = s1+s.charAt(i);
+                  break;
+              }
+              
+              
+            
+        }
+        System.out.println(s1);
+        
+        
+        
+    }
+}
