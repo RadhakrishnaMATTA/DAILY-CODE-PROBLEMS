@@ -1,0 +1,60 @@
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	//	System.out.println("Hello World");
+		
+		
+		String s ="radha";
+		String s1 =" ";
+		
+		
+		char arr[] = s.toCharArray();
+		//[r,a,d,h,a]
+        
+        Map<Character,Integer> hs = new HashMap<>();
+        
+        for(int i=0;i<arr.length;i++){
+            
+            
+            char ch = arr[i];
+            //r 
+            
+            
+            if(hs.containsKey(ch)){
+                
+                int temp = hs.get(ch);//int
+                
+                hs.put(ch,temp+1);
+                
+            }
+            else{
+                
+                hs.put(ch,1);
+            }
+            
+            
+        }
+        
+        StringBuffer sb = new StringBuffer();
+        
+        
+        for(char word: hs.keySet()){
+            
+            
+            sb.append(word).append(hs.get(word));
+            
+            
+            
+        }
+        
+        s1 =sb.toString();
+        
+        System.out.println(s1);
+		
+
+
+
+	}
+}
