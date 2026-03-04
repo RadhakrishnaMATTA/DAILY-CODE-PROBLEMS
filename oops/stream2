@@ -1,0 +1,35 @@
+import java.util.*;
+ import java.util.stream.Stream;
+
+public class Main
+{
+	public static void main(String[] args) {
+	
+		
+		
+// 		import java.util.Arrays;
+// import java.util.stream.Stream;
+
+// String[] array = {"a", "b", "c"};
+// Stream<String> stream = Arrays.stream(array);
+// stream.forEach(System.out::println);
+
+		
+		
+		
+	Integer arr[] ={3,6,1,8,5,10,7};
+	
+     Stream<Integer> ls = Arrays.stream(arr);
+     
+     ls
+     .filter(s -> s%2==0)
+     .map(a-> a*a)
+     .forEach(System.out::println);
+     
+     
+	
+	
+	
+		
+	}
+}
