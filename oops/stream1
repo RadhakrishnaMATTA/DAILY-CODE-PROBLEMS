@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	
+		
+		
+		List<String> ls =  Arrays.asList("john","Alexandra","ben","david","christina","army");
+		
+		
+		
+		ls.stream()
+		.map(a -> a.toUpperCase())
+		.filter( b -> b.length()>=5)
+		.sorted()
+		.forEach(System.out::println);
+		
+	}
+}
